@@ -73,7 +73,13 @@ print("\n-------------------------------------------\n"
 # 5. Otherwise (if total_cost is 60 or more), print "Purchase denied: Budget severely exceeded."
 
 # Write your code below:
-
+budget = 50
+if total_cost <= budget:
+    print("Purchase approved: Within budget.")
+elif total_cost > budget and total_cost < 60:
+    print("Warning: Purchase exceeds budget but is managable.")
+else: 
+    print("Purchase denied: Budget severely exceeded.")
 
 # -------------------------------------------
 # CHECKPOINT
@@ -110,11 +116,16 @@ print("\n-------------------------------------------\n"
 
 def calculate_area():
     # Insert try/except block here
+    try:
     # Remember to handle the input() and int() conversions inside the try block
-    length = int(input("Enter rectangle length: "))
-    width = int(input("Enter rectangle width: "))
-    area = length * width
-    return area
+        length = int(input("Enter rectangle length: "))
+        width = int(input("Enter rectangle width: "))
+        area = length * width
+        return area
+    except:
+        print("Error: Please enter only numerical values.") 
+        return 0 
+
     # Insert except block here
 
 # Call the function:
