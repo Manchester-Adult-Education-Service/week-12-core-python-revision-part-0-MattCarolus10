@@ -170,10 +170,10 @@ weekly_sales = [120.50, 155.75, 95.00, 180.25, 130.50]
 # Write your code below:
 total_sales = 0
 number_of_days = input("Enter number of days: ")
-for i in weekly_sales:
-    total_sales = total_sales + weekly_sales
-    average_sale = total_sales / number_of_days
-    print(f"Total sales is: {total_sales} and average sale is: {average_sale}")
+for sale in weekly_sales:
+    total_sales += sale
+average_sale = total_sales / len(weekly_sales)
+print(f"Total sales is: £{total_sales:.2f} and average sale is: £{average_sale:.2f}")
 
 # -------------------------------------------
 # CHECKPOINT
