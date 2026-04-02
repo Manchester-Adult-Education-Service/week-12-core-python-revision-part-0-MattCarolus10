@@ -213,7 +213,9 @@ product_catalogue = {
 # 4. If the code does not exist, print "Error: Product code not found."
 
 # Write your code below:
-
+product_code = input("Pleease enter product code: ").upper().strip()
+if product_code in product_catalogue:
+        print(f" The price for {product_code} is {product_catalogue[product_code]:.2f}")
 
 # -------------------------------------------
 # CHECKPOINT
@@ -263,7 +265,16 @@ print("\n-------------------------------------------\n"
     + "-------------------------------------------")
 
 # Write your code below:
-
+secret_colour = "BLUE"
+attempt = input("Please enter the secret colour: ").upper().strip()
+while secret_colour != attempt: 
+    print("Wrong guess")  
+    attempt = input("Please enter the secret colour: ").upper().strip()
+    if attempt == secret_colour:
+        print("You guessed it")
+        break
+    else:
+        print("Try again")
 
 # -------------------------------------------
 
@@ -287,7 +298,11 @@ data_set = [3, 12, 5, 8, 17, 24, 9, 10]
 even_numbers = []
 
 # Write your code below:
-
+even_numbers = []
+for numbers in data_set:
+    if numbers % 2 == 0:
+        even_numbers.append(numbers)
+        print(even_numbers)
 
 # -------------------------------------------
 # ADVANCED ACTIVITY: Combining Concepts
@@ -308,6 +323,8 @@ print("\n-------------------------------------------\n"
 def process_order(order_dict, catalogue):
     grand_total = 0
     print("--- Processing Order ---")
+    for items in order_dict:
+         if item in user_order:
     # Insert code to loop through the order and calculate the total here
     return grand_total
 
