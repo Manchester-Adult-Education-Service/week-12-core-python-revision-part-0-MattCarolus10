@@ -26,9 +26,9 @@
 # -------------------------------------------
 # Task 1: Variables, Arithmetic, and Output
 # -------------------------------------------
-print("-------------------------------------------\n"
-    + "Task 1: Variables, Arithmetic, and Output\n"
-    + "-------------------------------------------")
+# print("-------------------------------------------\n"
+#     + "Task 1: Variables, Arithmetic, and Output\n"
+#     + "-------------------------------------------")
 
 # TODO:
 # 1. Initialise a variable called 'price' and set it to 45.00.
@@ -37,10 +37,10 @@ print("-------------------------------------------\n"
 # 4. Print the final 'total_cost' using an f-string, formatted to two decimal places.
 
 # Write your code below:
-price = 45.00
-VAT_RATE = 0.20
-total_cost = price + price * VAT_RATE
-print(f"{total_cost:.2f}")
+# price = 45.00
+# VAT_RATE = 0.20
+# total_cost = price + price * VAT_RATE
+# print(f"{total_cost:.2f}")
 
 # -------------------------------------------
 # CHECKPOINT
@@ -61,9 +61,9 @@ print(f"{total_cost:.2f}")
 # -------------------------------------------
 # Task 2: Conditionals (IF/ELIF/ELSE) and Comparison
 # -------------------------------------------
-print("\n-------------------------------------------\n"
-    + "Task 2: Conditionals (IF/ELIF/ELSE) and Comparison\n"
-    + "-------------------------------------------")
+# print("\n-------------------------------------------\n"
+#     + "Task 2: Conditionals (IF/ELIF/ELSE) and Comparison\n"
+#     + "-------------------------------------------")
 
 # TODO:
 # 1. Initialise a variable 'budget' and set it to 50.
@@ -73,13 +73,13 @@ print("\n-------------------------------------------\n"
 # 5. Otherwise (if total_cost is 60 or more), print "Purchase denied: Budget severely exceeded."
 
 # Write your code below:
-budget = 50
-if total_cost <= budget:
-    print("Purchase approved: Within budget.")
-elif total_cost < 60:
-    print("Warning: Purchase exceeds budget but is managable.")
-else: 
-    print("Purchase denied: Budget severely exceeded.")
+# budget = 50
+# if total_cost <= budget:
+#     print("Purchase approved: Within budget.")
+# elif total_cost < 60:
+#     print("Warning: Purchase exceeds budget but is managable.")
+# else: 
+#     print("Purchase denied: Budget severely exceeded.")
 
 # -------------------------------------------
 # CHECKPOINT
@@ -100,9 +100,9 @@ else:
 # -------------------------------------------
 # Task 3: Debugging a Function (Fixing a Crash)
 # -------------------------------------------
-print("\n-------------------------------------------\n"
-    + "Task 3: Debugging a Function (Fixing a Crash)\n"
-    + "-------------------------------------------")
+# print("\n-------------------------------------------\n"
+#     + "Task 3: Debugging a Function (Fixing a Crash)\n"
+#     + "-------------------------------------------")
 
 # The function below is supposed to calculate the area of a rectangle,
 # but it will crash if the user enters non-numerical data (e.g. 'five').
@@ -114,23 +114,23 @@ print("\n-------------------------------------------\n"
 #
 # HINT: You may need to use a single `try` block that covers both `int()` conversions.
 
-def calculate_area():
-    # Insert try/except block here
-    try:
-    # Remember to handle the input() and int() conversions inside the try block
-        length = int(input("Enter rectangle length: "))
-        width = int(input("Enter rectangle width: "))
-        area = length * width
-        return area
-    except:
-        print("Error: Please enter only numerical values.") 
-        return 0 
+# def calculate_area():
+#     # Insert try/except block here
+#     try:
+#     # Remember to handle the input() and int() conversions inside the try block
+#         length = int(input("Enter rectangle length: "))
+#         width = int(input("Enter rectangle width: "))
+#         area = length * width
+#         return area
+#     except:
+#         print("Error: Please enter only numerical values.") 
+#         return 0 
 
     # Insert except block here
 
 # Call the function:
-rectangle_area = calculate_area()
-print(f"Calculated Area: {rectangle_area}")
+# rectangle_area = calculate_area()
+# print(f"Calculated Area: {rectangle_area}")
 
 
 # -------------------------------------------
@@ -153,12 +153,12 @@ print(f"Calculated Area: {rectangle_area}")
 # -------------------------------------------
 # Task 4: Lists and the FOR Loop
 # -------------------------------------------
-print("\n-------------------------------------------\n"
-    + "Task 4: Lists and the FOR Loop\n"
-    + "-------------------------------------------")
+# print("\n-------------------------------------------\n"
+#     + "Task 4: Lists and the FOR Loop\n"
+#     + "-------------------------------------------")
 
 # A list of weekly sales figures (in pounds):
-weekly_sales = [120.50, 155.75, 95.00, 180.25, 130.50]
+# weekly_sales = [120.50, 155.75, 95.00, 180.25, 130.50]
 
 # TODO:
 # 1. Initialise a variable called 'total_sales' and set it to 0.
@@ -168,12 +168,12 @@ weekly_sales = [120.50, 155.75, 95.00, 180.25, 130.50]
 # 5. Print both the 'total_sales' and 'average_sale', formatted to two decimal places.
 
 # Write your code below:
-total_sales = 0
-number_of_days = input("Enter number of days: ")
-for sale in weekly_sales:
-    total_sales += sale
-average_sale = total_sales / len(weekly_sales)
-print(f"Total sales is: £{total_sales:.2f} and average sale is: £{average_sale:.2f}")
+# total_sales = 0
+# number_of_days = input("Enter number of days: ")
+# for sale in weekly_sales:
+#     total_sales += sale
+# average_sale = total_sales / len(weekly_sales)
+# print(f"Total sales is: £{total_sales:.2f} and average sale is: £{average_sale:.2f}")
 
 # -------------------------------------------
 # CHECKPOINT
@@ -194,17 +194,17 @@ print(f"Total sales is: £{total_sales:.2f} and average sale is: £{average_sale
 # -------------------------------------------
 # Task 5: Dictionaries and Data Lookup
 # -------------------------------------------
-print("\n-------------------------------------------\n"
-    + "Task 5: Dictionaries and Data Lookup\n"
-    + "-------------------------------------------")
+# print("\n-------------------------------------------\n"
+#     + "Task 5: Dictionaries and Data Lookup\n"
+#     + "-------------------------------------------")
 
-# A small dictionary containing product codes and their prices:
-product_catalogue = {
-    'PRD001': 15.99,
-    'PRD002': 22.50,
-    'PRD003': 8.75,
-    'PRD004': 40.00
-}
+# # A small dictionary containing product codes and their prices:
+# product_catalogue = {
+#     'PRD001': 15.99,
+#     'PRD002': 22.50,
+#     'PRD003': 8.75,
+#     'PRD004': 40.00
+# }
 
 # TODO:
 # 1. Ask the user to input a product code (e.g. 'PRD002').
@@ -213,9 +213,9 @@ product_catalogue = {
 # 4. If the code does not exist, print "Error: Product code not found."
 
 # Write your code below:
-product_code = input("Pleease enter product code: ").upper().strip()
-if product_code in product_catalogue:
-        print(f" The price for {product_code} is {product_catalogue[product_code]:.2f}")
+# product_code = input("Pleease enter product code: ").upper().strip()
+# if product_code in product_catalogue:
+#         print(f" The price for {product_code} is {product_catalogue[product_code]:.2f}")
 
 # -------------------------------------------
 # CHECKPOINT
@@ -260,21 +260,20 @@ if product_code in product_catalogue:
 # 4. If the guess is wrong, print "Try again."
 
 # Write your code below:
-print("\n-------------------------------------------\n"
-    + "Extension 2: The WHILE Loop Challenge\n"
-    + "-------------------------------------------")
+# print("\n-------------------------------------------\n"
+#     + "Extension 2: The WHILE Loop Challenge\n"
+#     + "-------------------------------------------")
 
-# Write your code below:
-secret_colour = "BLUE"
-attempt = input("Please enter the secret colour: ").upper().strip()
-while secret_colour != attempt: 
-    print("Wrong guess")  
-    attempt = input("Please enter the secret colour: ").upper().strip()
-    if attempt == secret_colour:
-        print("You guessed it")
-        break
-    else:
-        print("Try again")
+# # Write your code below:
+# secret_colour = "BLUE"
+# attempt = ""
+# while attempt != secret_colour: 
+#     attempt = input("Please enter the secret colour: ").upper().strip()
+#     if attempt == secret_colour:
+#         print("You guessed it")
+#         break
+#     else:
+#         print("Try again")
 
 # -------------------------------------------
 
@@ -290,26 +289,26 @@ while secret_colour != attempt:
 # 5. Print the final 'even_numbers' list.
 
 # Write your code below:
-print("\n-------------------------------------------\n"
-    + "Extension 3: List Manipulation\n"
-    + "-------------------------------------------")
+# print("\n-------------------------------------------\n"
+#     + "Extension 3: List Manipulation\n"
+#     + "-------------------------------------------")
 
-data_set = [3, 12, 5, 8, 17, 24, 9, 10]
-even_numbers = []
+# data_set = [3, 12, 5, 8, 17, 24, 9, 10]
+# even_numbers = []
 
 # Write your code below:
-even_numbers = []
-for numbers in data_set:
-    if numbers % 2 == 0:
-        even_numbers.append(numbers)
-        print(even_numbers)
+# even_numbers = []
+# for numbers in data_set:
+#     if numbers % 2 == 0:
+#         even_numbers.append(numbers)
+#         print(even_numbers)
 
 # -------------------------------------------
 # ADVANCED ACTIVITY: Combining Concepts
 # -------------------------------------------
-print("\n-------------------------------------------\n"
-    + "ADVANCED ACTIVITY: Combining Concepts\n"
-    + "-------------------------------------------")
+# print("\n-------------------------------------------\n"
+#     + "ADVANCED ACTIVITY: Combining Concepts\n"
+#     + "-------------------------------------------")
 
 # TODO:
 # 1. Define a function `process_order(order_dict, catalogue)` that takes a dictionary (the user's order) and the `product_catalogue` dictionary (from Task 5) as arguments.
@@ -319,21 +318,38 @@ print("\n-------------------------------------------\n"
 # 5. Calculate the subtotal for that item (price * quantity).
 # 6. Return the **Grand Total** for the entire order.
 
-# Write your code below:
-def process_order(order_dict, catalogue):
-    grand_total = 0
-    print("--- Processing Order ---")
-    for items in order_dict:
-         if item in user_order:
-    # Insert code to loop through the order and calculate the total here
-    return grand_total
-
-# Test the function:
 user_order = {
     'PRD001': 2,
     'PRD003': 5,
-    'PRD099': 1
 }
+
+product_catalogue = {
+    'PRD001': 15.99,
+    'PRD002': 22.50,
+    'PRD003': 8.75,
+    'PRD004': 40.00
+}
+
+# Write your code below:
+def process_order(order_dict, catalogue):
+    subtotal= 0
+    grand_total = 0
+
+    # print("--- Processing Order ---")
+    # Insert code to loop through the order and calculate the total here
+    for product_code in order_dict:
+        price = catalogue[product_code]
+        subtotal = order_dict[product_code] * price
+        print(subtotal)
+        grand_total += subtotal
+        print(grand_total)
+
+
+    return grand_total
+
+process_order(user_order,product_catalogue)    
+
+# Test the function:
 
 # Call the function and print the final bill (formatted to two decimal places):
 # Write your code below:
